@@ -14,7 +14,7 @@ let points = 23;
 points = 43;
 console.log(points);
 
-//  CONST-----
+// CONST-----
 const value = 33;
 // const value = 43; // throws error
 // value = 44;  // throws error
@@ -377,8 +377,31 @@ console.log("global example -", scopeExample); // Nearest value
 
 let ageTernaryOperatorExample = 17;
 
+// for IF, ELSE condition
+
 if (ageTernaryOperatorExample > 18) {
   console.log("Qualify");
 } else {
   console.log("fail");
 }
+
+// let ternaryResult = ageTernaryOperatorExample > 18 ? "Qualify" : "fail";
+// console.log("Ternary Operator result: ", ternaryResult);
+// O/P - fail
+
+let ternaryResult = ageTernaryOperatorExample > 8 ? "Qualify" : "fail";
+console.log("Ternary Operator result: ", ternaryResult);
+// O/P- Qualify
+
+// ex-2- Single line solution
+
+let ageTernaryOperatorExample2 = 19;
+let weight = 60;
+
+let ternaryResult2 =
+  ageTernaryOperatorExample2 > 8
+    ? weight > 70
+      ? "Qualify"
+      : "weightIssue"
+    : "ageIssue";
+console.log(ternaryResult2);
